@@ -12,7 +12,13 @@ print("Processor : " , obj.processor)
 print("RAM : " , obj.RAM)
 print("Storage : " , obj.storage)
 
--------------------------------------------------------------------------
+Output : 
+Brand :  Lenovo
+Processor :  Intel Ultra 5
+RAM :  16 GB
+Storage :  512 GD SSD
+
+------------------------------------------------------------------------
 
 class Product:
   def __init__(self,product_ID,product_name,price,quantity):
@@ -30,7 +36,12 @@ class Product:
 product_details = Product("1","Laptop","45000","1")
 product_details.display_details()
 
----------------------------------------------------------
+Output :
+Product ID :  1
+Product Name :  Laptop
+Price :  45000
+Quantity :  1
+-------------------------------------------------------------------------
 class Movie:
   def __init__(self,movie_name,director,language,release_year):
     self.movie_name = movie_name
@@ -44,6 +55,12 @@ print("Movie Name : ", movie_details.movie_name)
 print("Director : ", movie_details.director)
 print("Language : ", movie_details.language)
 print("Release Year : ", movie_details.release_year)
+
+Output:
+Movie Name :  Avengers
+Director :  Joss Whedon
+Language :  English
+Release Year :  2012
 ---------------------------------------------------------------------
 class Rectange:
   def __init__(self,length,width):
@@ -61,3 +78,11 @@ b = int(input("Enter Width : "))
 
 obj = Rectange(a,b)
 obj.calculate_area()
+
+Output:
+Enter Length : 4
+Enter Width : 6
+Length :  4
+Width :  6
+Area of Rectangle :  24
+--------------------------------------------------------------------------
