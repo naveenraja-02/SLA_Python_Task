@@ -1,0 +1,63 @@
+class Laptop:
+  def __init__(self,brand,processor,RAM,storage):
+    self.brand = brand
+    self.processor = processor
+    self.RAM = RAM
+    self.storage = storage
+
+obj = Laptop("Lenovo","Intel Ultra 5","16 GB","512 GD SSD")
+
+print("Brand : ", obj.brand)
+print("Processor : " , obj.processor)
+print("RAM : " , obj.RAM)
+print("Storage : " , obj.storage)
+
+-------------------------------------------------------------------------
+
+class Product:
+  def __init__(self,product_ID,product_name,price,quantity):
+    self.product_ID = product_ID
+    self.product_name = product_name
+    self.price = price
+    self.quantity = quantity
+
+  def display_details(self):
+    print("Product ID : ", self.product_ID)
+    print("Product Name : ", self.product_name)
+    print("Price : ", self.price)
+    print("Quantity : ", self.quantity)
+
+product_details = Product("1","Laptop","45000","1")
+product_details.display_details()
+
+---------------------------------------------------------
+class Movie:
+  def __init__(self,movie_name,director,language,release_year):
+    self.movie_name = movie_name
+    self.director = director
+    self.language = language
+    self.release_year = release_year
+
+movie_details = Movie("Avengers","Joss Whedon","English","2012")
+
+print("Movie Name : ", movie_details.movie_name)
+print("Director : ", movie_details.director)
+print("Language : ", movie_details.language)
+print("Release Year : ", movie_details.release_year)
+---------------------------------------------------------------------
+class Rectange:
+  def __init__(self,length,width):
+    self.length = length
+    self.width = width
+
+  def calculate_area(self):
+    area = self.length * self.width
+    print("Length : ",self.length)
+    print("Width : ", self.width)
+    print("Area of Rectangle : ", area)
+
+a = int(input("Enter Length : "))
+b = int(input("Enter Width : "))
+
+obj = Rectange(a,b)
+obj.calculate_area()
