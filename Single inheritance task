@@ -1,0 +1,59 @@
+class Employee:
+  def __init__(self,emp_id,emp_name):
+    self.emp_id = emp_id
+    self.emp_name = emp_name
+
+class Salary(Employee):
+  def __init__(self,emp_id,emp_name,basic_salary,bonus):
+    super().__init__(emp_id,emp_name)
+    self.basic_salary = basic_salary
+    self.bonus = bonus
+
+  def calculate_salary(self):
+    return self.basic_salary + self.bonus
+
+  def display(self):
+    print(f"Employee ID: {self.emp_id}")
+    print(f"Employee Name: {self.emp_name}")
+    print(f"Basic Salary: {self.basic_salary}")
+    print(f"Bonus: {self.bonus}")
+    print(f"Total Salary: {self.calculate_salary()}")
+
+emp = Salary(101,"John",50000,5000)
+emp.calculate_salary()
+emp.display()
+
+Output : 
+
+Employee ID: 101
+Employee Name: John
+Basic Salary: 50000
+Bonus: 5000
+Total Salary: 55000
+-------------------------------------------------------------------------------------------
+class Vehicle:
+  def __init__(self,brand,model):
+    self.brand = brand
+    self.model = model
+
+class Car(Vehicle):
+  def __init__(self,brand,model,fuel_type,seating_capacity):
+    super().__init__(brand,model)
+    self.fuel_type = fuel_type
+    self.seating_capacity = seating_capacity
+
+  def display(self):
+    print(f"Brand: {self.brand}")
+    print(f"Model: {self.model}")
+    print(f"Fuel Type: {self.fuel_type}")
+    print(f"Seating Capacity: {self.seating_capacity}")
+
+car1 = Car("Toyota","Camry","Petrol",5)
+car1.display()
+
+Output:
+Brand: Toyota
+Model: Camry
+Fuel Type: Petrol
+Seating Capacity: 5
+--------------------------------------------------------------------------------------------
